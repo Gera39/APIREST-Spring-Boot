@@ -44,9 +44,9 @@ src/
 
 
 ## TODO 
-- [x] Seguridad con JWT  
-- [x] CRUD de usuarios  
-- [x] CRUD de membresías  
+- ✅ Seguridad con JWT  
+- ✅ CRUD de usuarios  
+- ✅ CRUD de membresías  
 - [ ] Documentación con Swagger  
 - [ ] Implementar roles (admin/usuario)  
 
@@ -78,18 +78,21 @@ json
 }
 
 3. **Usar token para acceder a recursos protegidos**
+
 GET /api/users
+
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
 
 🧪 Endpoints principales
-Método	Endpoint	Descripción
+
+Método	Endpoint	        Descripción
 POST	/api/auth/register	Registrar un nuevo usuario
-POST	/api/auth/login	Autenticación de usuario
-GET	/api/users	Listar todos los usuarios
-GET	/api/users/{id}	Obtener usuario por ID
-PUT	/api/users/{id}	Actualizar usuario
-DELETE	/api/users/{id}	Eliminar usuario
-GET	/api/memberships	Listar todas las membresías
+POST	/api/auth/login	    Autenticación de usuario
+GET	    /api/users	        Listar todos los usuarios
+GET	    /api/users/{id}	    Obtener usuario por ID
+PUT	    /api/users/{id}	    Actualizar usuario
+DELETE	/api/users/{id}	    Eliminar usuario
+GET	    /api/memberships	Listar todas las membresías
 POST	/api/memberships	Crear nueva membresía
 
 
