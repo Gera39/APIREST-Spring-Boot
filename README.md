@@ -79,21 +79,40 @@ json
 
 3. **Usar token para acceder a recursos protegidos**
 
-GET /api/users
+## 📌 Endpoints de la API
 
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+### 🔐 Autenticación
 
-🧪 Endpoints principales
+| Método | Endpoint             | Descripción                      |
+|--------|----------------------|----------------------------------|
+| POST   | `/api/auth/register` | Registro de nuevo usuario        |
+| POST   | `/api/auth/login`    | Autenticación y generación JWT   |
 
-Método	Endpoint	        Descripción
-POST	/api/auth/register	Registrar un nuevo usuario
-POST	/api/auth/login	    Autenticación de usuario
-GET	    /api/users	        Listar todos los usuarios
-GET	    /api/users/{id}	    Obtener usuario por ID
-PUT	    /api/users/{id}	    Actualizar usuario
-DELETE	/api/users/{id}	    Eliminar usuario
-GET	    /api/memberships	Listar todas las membresías
-POST	/api/memberships	Crear nueva membresía
+---
+
+### 👤 Usuarios
+
+| Método | Endpoint            | Descripción                       |
+|--------|---------------------|-----------------------------------|
+| GET    | `/api/users`        | Listar todos los usuarios         |
+| GET    | `/api/users/{id}`   | Obtener usuario por ID            |
+| POST   | `/api/users`        | Crear nuevo usuario               |
+| PUT    | `/api/users/{id}`   | Actualizar usuario                |
+| DELETE | `/api/users/{id}`   | Eliminar usuario                  |
+
+---
+
+### 💳 Membresías
+
+| Método | Endpoint                 | Descripción                           |
+|--------|--------------------------|---------------------------------------|
+| GET    | `/api/memberships`       | Listar todas las membresías           |
+| GET    | `/api/memberships/{id}`  | Obtener membresía por ID              |
+| POST   | `/api/memberships`       | Crear nueva membresía                 |
+| PUT    | `/api/memberships/{id}`  | Actualizar membresía                  |
+| DELETE | `/api/memberships/{id}`  | Eliminar membresía                    |
+
+
 
 
 ## 🛠️ Tecnologías utilizadas
