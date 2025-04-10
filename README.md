@@ -6,22 +6,24 @@ API REST construida con Spring Boot para gestionar usuarios y sus membresías en
 
 ## 📋 Características
 
-- CRUD de usuarios
-- CRUD de membresías
-- Relación entre usuarios y membresías
-- Autenticación con JSON Web Tokens (JWT)
-- Seguridad con Spring Security
-- Arquitectura RESTful
-- Manejo de excepciones personalizado
-- Validaciones con Bean Validation
+- ✅ CRUD de usuarios
+- ✅ CRUD de membresías
+- ✅ Relación entre usuarios y membresías
+- ✅ Autenticación con JSON Web Tokens (JWT)
+- ✅ Seguridad con Spring Security
+- ✅ Arquitectura RESTful
+- ✅ Manejo de excepciones personalizado
+- ✅ Validaciones con Bean Validation
 
----
+
+
 ## 📂 Estructura del proyecto
 src/
 ├── main/
 │   ├── java/
 │   │   └── com.example.gymapi/
 │   │       ├── controllers/
+
 │   │       ├── models/
 │   │       ├── repositories/
 │   │       ├── services/
@@ -31,19 +33,17 @@ src/
 │       └── application.properties
 
 ## TODO 
- Seguridad con JWT *
+- [x] Seguridad con JWT  
+- [x] CRUD de usuarios  
+- [x] CRUD de membresías  
+- [ ] Documentación con Swagger  
+- [ ] Implementar roles (admin/usuario)  
 
- CRUD de usuarios *
-
- CRUD de membresías *
-
- Documentación con Swagger
-
- Implementar roles (admin/usuario)
 
 ## 🔐 Autenticación
 
-Se utiliza JWT para proteger los endpoints. Los usuarios deben autenticarse para obtener un token, el cual deben enviar en el header `Authorization` con el formato:
+Se utiliza **JWT** para proteger los endpoints. Los usuarios deben autenticarse para obtener un token, el cual deben enviar en el header:
+
 
 Authorization: Bearer <token>
 
@@ -53,17 +53,20 @@ Authorization: Bearer <token>
 
 POST /api/v1/auth/login Content-Type: application/json
 
-{ "username": "usuario1", "password": "contraseña123" }
+{
+ "username": "usuario1",
+ "password": "contraseña123" 
+}
 
 
 2. **Respuesta:**
 
-```json
+json
 {
   "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
 }
 
-3. Usar token para acceder a recursos protegidos
+3. **Usar token para acceder a recursos protegidos**
 GET /api/users
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
 
@@ -79,7 +82,7 @@ GET	/api/memberships	Listar todas las membresías
 POST	/api/memberships	Crear nueva membresía
 
 
-🛠️ Tecnologías utilizadas
+## 🛠️ Tecnologías utilizadas
 Java 21
 
 Spring Boot
