@@ -19,9 +19,7 @@ API REST construida con Spring Boot para gestionar usuarios y sus membresías en
 
 ## 📂 Estructura del proyecto
 src/
-
 ├── main/
-
 │   ├── java/
 
 │   │   └── com.example.gymapi/
