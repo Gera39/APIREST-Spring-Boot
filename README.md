@@ -18,7 +18,22 @@ API REST construida con Spring Boot para gestionar usuarios y sus membresías en
 
 
 ## 📂 Estructura del proyecto
-src/ ├── main/ │ ├── java/ │ │ └── com/ │ │ └── example/ │ │ └── gymapi/ │ │ ├── controllers/ │ │ ├── models/ │ │ ├── repositories/ │ │ ├── services/ │ │ ├── security/ │ │ └── GymApiApplication.java │ └── resources/ │ └── application.properties
+src/
+
+├── main/
+
+│   ├── java/
+
+│   │   └── com.example.gymapi/
+│   │       ├── controllers/
+
+│   │       ├── models/
+│   │       ├── repositories/
+│   │       ├── services/
+│   │       ├── security/
+│   │       └── GymApiApplication.java
+│   └── resources/
+│       └── application.properties
 
 ## TODO 
 - [x] Seguridad con JWT  
